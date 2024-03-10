@@ -2,8 +2,8 @@ name = "backend"
 compatibility_date = "2023-12-01"
 
  [vars]
-DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZGJjNjU4ZWMtMTIzNS00OGZjLWJlOTMtOTI5MTUxMTdjYWM0IiwidGVuYW50X2lkIjoiNjEwZDljMDk3MDczZDZiODVlYmY0M2E3YmFlN2RhNTE3ZjE2MmY2NDg1NzE0OWRiNWUwNTJmMGNhMjcyMWRhMiIsImludGVybmFsX3NlY3JldCI6ImU3YTYzYWZlLWFmODAtNGMzOS1hOWNlLTFkODUwNzVlZmNiYiJ9.J0kpebTKjol89kcMQPITBoVShQoc8ngVKtJIgHxWzXw"
-
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiNmFlMWVmMTQtMDVjNi00MzQzLWI4ZmUtNDkyMGNjYWNiYjIxIiwidGVuYW50X2lkIjoiNGRlYWIzNTI2OGMxNjU1NmZlMzg2NmUxMDM1MzA5YzE0ZWQ4NzQ5ZWZhNWI1NzIxYzExYThjMjNhY2MyNWI0ZSIsImludGVybmFsX3NlY3JldCI6ImJkYTgwZjk4LWJiMWQtNGQ2NC04ZDhmLTg5YmQ3YTI0YjYzNyJ9.ut1DfALIyoqtEZYGyXf3-IXwFwKtLcCF_TD-LogQpGs"
+JWT_SECRET = "mySecretKey"
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
 # id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
@@ -16,3 +16,4 @@ DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsI
 # binding = "DB"
 # database_name = "my-database"
 # database_id = ""
+ 
