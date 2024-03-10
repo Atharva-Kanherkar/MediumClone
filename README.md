@@ -1,4 +1,4 @@
- ## Access the backend deployed on the internet here 
+ ## Access the backend API deployed on the internet here (use postman for best results)
 [https://backend.techwave99.workers.dev](https://backend.techwave99.workers.dev)
 
 ## Access using these routes:
