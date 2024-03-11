@@ -2,7 +2,7 @@ import { Hono } from 'hono';
 import { PrismaClient } from '@prisma/client/edge';
 import { withAccelerate } from '@prisma/extension-accelerate';
 import { decode, sign, verify } from 'hono/jwt';
-
+import {createBlogInput} from "atharrva15common";
 
 export const bookRouter = new Hono<{
     Bindings: {
@@ -42,6 +42,10 @@ bookRouter.post('/', async (c) => {
             datasourceUrl: c.env.DATABASE_URL,
         }).$extends(withAccelerate());
         const body = await c.req.json();
+        const success = createBlogInput.safeParse(body);
+        if (!success.success) {
+            return c.json({ error: success.error.issues });
+        }
         const post = await prisma.post.create({
             data : {
                 title : body.title,
@@ -60,8 +64,7 @@ bookRouter.post('/', async (c) => {
   
 bookRouter.put('/api/v1/blog', async (c) => {
     try {
-        // Your PUT request logic here
-        // Ensure proper error handling and status codes
+         //logic not implemented yet for updating the blog 
     } catch (error) {
         c.status(500);
         return c.json({ error: "Internal Server Error" });
